@@ -4,6 +4,8 @@ class MP3Importer
   
   def initialize(array)
     @path = path
+    Song << 
+  end
   
   def files
     
