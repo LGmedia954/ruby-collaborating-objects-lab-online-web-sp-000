@@ -20,6 +20,7 @@ class Artist
   def songs
     Song.artist.select {|song| Song.artist == Song.artist}
   end
+end
   
   def find_or_create_by_name(song, name)
     artist.detect {|artist| if artist.name}
