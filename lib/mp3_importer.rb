@@ -12,6 +12,7 @@ class MP3Importer
   end
   
   def self.import
+    files = Dir.glob("*.jpg")
     
     
   end
