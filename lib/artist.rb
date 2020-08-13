@@ -26,6 +26,7 @@ class Artist
   else
     artist.name.add
   end
+end
   
   def print_songs
     Song.artist
