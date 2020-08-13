@@ -23,6 +23,7 @@ class Song
   def artist_name(name)
     artist = artist.new
     @artist << song
-    @Artist.
+    song.artist
+  end
   
 end
