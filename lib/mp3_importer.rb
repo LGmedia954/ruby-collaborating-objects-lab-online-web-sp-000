@@ -2,16 +2,16 @@ class MP3Importer
   
   attr_accessor :song, :artist
   
-  def initialize(array)
+  def initialize(directory)
     @path = path
-    Song << 
+    Song << filename
   end
   
-  def files
+  def self.files
     
   end
   
-  def import
+  def self.import
     
     
   end
