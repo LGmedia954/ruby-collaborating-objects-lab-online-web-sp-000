@@ -6,18 +6,18 @@ class Song
   
   def initialize(name)
     @name = name
-    @Artist << @artist.name
+    @@all << self
   end
   
-  def all
+  def self.all
     @@all
   end
   
-  def new_by_filename(filename)
-    filename.split[0]+(" - ")+[1].join
-    
-    @Artist << self
-    @Song
+  def self.new_by_filename(filename)
+    artist, song = filename.split(" - ")
+    song = self.new(song)
+    song.artist_name = artist
+    song
   end
     
   
